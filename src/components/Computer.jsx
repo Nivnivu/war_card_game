@@ -3,10 +3,11 @@ import React from 'react';
 export default function Computer(props) {
     return (
         <div>
-    <img src={ require( `${props.pack[props.counter].Img}` ) } width="150px" />
-    <p className='wins'>Wins: {props.wins}</p>
-    <p className='losts'>Losts: {props.losts}</p>
-    <h1>{props.computerName}</h1>
+        <h1>{props.computerName}</h1>
+    <img src={ require( `${props.pack[props.counter].Img}` ) } />
+    <p className='wins'>Wins: {props.wins} <span className='losts'>Losts: {props.losts}</span></p>
+   
+    
     </div>
     )
   }
