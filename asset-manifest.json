@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/war_card_game/static/css/main.b1c5d834.css",
+    "main.css": "/war_card_game/static/css/main.bb6b9555.css",
     "main.js": "/war_card_game/static/js/main.88b6a2eb.js",
     "static/js/787.06f0c33f.chunk.js": "/war_card_game/static/js/787.06f0c33f.chunk.js",
     "static/media/queen_of_clubs2.png": "/war_card_game/static/media/queen_of_clubs2.ef480115313c1c393699.png",
@@ -72,12 +72,12 @@
     "static/media/2_of_hearts.png": "/war_card_game/static/media/2_of_hearts.c2cb81fb3d816683e15a.png",
     "static/media/2_of_diamonds.png": "/war_card_game/static/media/2_of_diamonds.a51b192d2f2ba1fc1d53.png",
     "index.html": "/war_card_game/index.html",
-    "main.b1c5d834.css.map": "/war_card_game/static/css/main.b1c5d834.css.map",
+    "main.bb6b9555.css.map": "/war_card_game/static/css/main.bb6b9555.css.map",
     "main.88b6a2eb.js.map": "/war_card_game/static/js/main.88b6a2eb.js.map",
     "787.06f0c33f.chunk.js.map": "/war_card_game/static/js/787.06f0c33f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1c5d834.css",
+    "static/css/main.bb6b9555.css",
     "static/js/main.88b6a2eb.js"
   ]
 }
