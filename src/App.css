@@ -1,38 +1,92 @@
+html, body {
+  background-image: url("./backgroundimage.jpg");
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.conatiner{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 40px;
+  padding: 15px;
+  width: 500px;
+  margin: auto;
+  border: 1px solid gray;
+  opacity: 0.8;
+  background: rgb(160, 160, 160, 0.5) ;
 }
 
-.App-link {
-  color: #61dafb;
+.wins{
+  color:#4dff00;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.losts{
+  color: #ff1100;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button{
+  padding: 8px 20px 8px 20px;
+  background-color: lightgray;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.roundWon{
+  font-size: 1.5rem;
+  color: #4dff00;
+  font-weight: bold;
+}
+
+.roundLost{
+  font-size: 1.5rem;
+  color: #ff1100;
+  font-weight: bold;
+}
+h1{
+  color:#440033;
+
+}
+
+.enterName{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+input[type=text] {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 150px;
+}
+
+table,tr{
+  border: 1px solid darkgray;
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 60px;
   }
-  to {
-    transform: rotate(360deg);
+  h1{
+    font-size: 1.3rem;
+  }
+
+  .roundLost, .roundWon, .losts, .wins{
+    font-size: 1rem;
+  }
+  .conatiner{
+    width: 300px;
+  }
+  html, body {
+    background-image: url("./backgroundimage.jpg");
+    background-size: 100%;
   }
 }
