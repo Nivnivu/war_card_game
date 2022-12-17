@@ -56,6 +56,8 @@ function shuffle(array) {
   const [totalLost, setTotalLost] = useState(0);
   const [totalWin, setTotalWin] = useState(0);
   const [roundWin, setRoundWin] = useState(0);
+  const arrayPlayers = []
+  const [playerList, setPlayerList] = useState(arrayPlayers);
  
   let [gamesPlayed, setGamesPlayed] = useState(0);
 
@@ -97,12 +99,31 @@ function shuffle(array) {
     }
   }
 
+    // ✅ Add an object to a state array    
+    const addObjectToArray = obj => {
+        setPlayerList(current => [...current, obj]);
+    }
+    
+  
+    // ✅ Update one or more objects in a state array
+    const updateObjectInArray = () => {
+      setPlayerList(current =>
+        current.map(obj => {
+          if (obj.name == playerName ) {
+            return {...obj, roundWin: roundWin, roundLost: croundWin};
+          }
+  
+          return obj;
+        }),
+      );
+    };
+
 
   function Rendering(){
     if (playerName == ''){
-      return <div className='conatiner'> <AskName name={playerName} changeName={setName}/>  </div>
+      return <div className='conatiner'> <AskName name={playerName} changeName={setName} addObjectToArray={addObjectToArray} playerList={playerList} setRoundWin={setRoundWin} setcRoundWin={setcRoundWin} />  </div>
     } else if(cardsCounter == 26){
-        return <div className='conatiner'> <Final string={stringCheck} roundWin={roundWin} lost={croundWin} setCard={setCard} /></div>
+        return <div className='conatiner'> <Final string={stringCheck} roundWin={roundWin} lost={croundWin} setCard={setCard} updateObjectInArray={updateObjectInArray}  changePlayer={changeTplayer}/></div>
     } else {
       
       return <div className='conatiner'>
@@ -133,7 +154,13 @@ function shuffle(array) {
     setPlayerName(playerName)
   }
 
-  console.log(stringCheck)
+// Change the player
+const changeTplayer = (plaeyName) => {
+  setPlayerName(plaeyName);
+  setcRoundWin(0);
+  setRoundWin(0);
+}
+
 
   return (
     <div className="App">
